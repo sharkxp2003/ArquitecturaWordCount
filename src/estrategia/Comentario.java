@@ -41,11 +41,7 @@ public class Comentario implements EstadoCount {
                 if ((ascii == 10 && endOfComment)) {
                     wordCount.setEstado(Selector.getInstance());
                 }
-                
-                if (ascii == 10 && inLineComment) { 
-                    incrementLine(wordCount);
-                    wordCount.setEstado(Selector.getInstance());
-                }
+
 	}
 
         @Override
